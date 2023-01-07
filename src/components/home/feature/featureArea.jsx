@@ -34,22 +34,17 @@ export default function FeatureArea() {
                                 <div className="feature__item">
                                     <img src="assets/imgs/feature/icon/2.png" alt="Feature Icon" />
                                     <h3 className="feature__title">Optimum</h3>
-                                    <p>Brand identity design a the key to success whether you breath rebranding an existing business
-                                        or
-                                        creating a business</p>
+                                    <p>Brand identity design a the key to success whether you breath rebranding an existing business or creating a business</p>
                                 </div>
                                 <div className="feature__item">
                                     <img className="" src="assets/imgs/feature/icon/3.png" alt="Feature Icon" />
                                     <h3 className="feature__title">Thinking</h3>
-                                    <p>Creative typography plays the big role to pull off this trending more effectively with the
-                                        thinking use a thicker point</p>
+                                    <p>Creative typography plays the big role to pull off this trending more effectively with the thinking use a thicker point</p>
                                 </div>
                                 <div className="feature__item">
                                     <img src="assets/imgs/feature/icon/4.png" alt="Feature Icon" />
                                     <h3 className="feature__title">Execution</h3>
-                                    <p>Stricky with multiple shades of the colours. However, this type of alone can look awesome
-                                        forever
-                                        an online business</p>
+                                    <p>Stricky with multiple shades of the colours. However, this type of alone can look awesome forever an online business</p>
                                 </div>
                             </div>
                         </div>

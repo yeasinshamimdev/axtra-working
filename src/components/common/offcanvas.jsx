@@ -32,7 +32,7 @@ export default function Offcanvas() {
                     <div className="offcanvas__menu-wrapper">
                         <nav className="offcanvas__menu">
                             <ul className="menu-anim">
-                                <li><a>home</a>
+                                <li><Link href="/">home</Link>
                                     <ul>
                                         <li><Link href="/">Digital Maketing</Link></li>
                                         <li><Link href="/index-dark">Digital Maketing dark</Link></li>
@@ -52,7 +52,7 @@ export default function Offcanvas() {
                                 </li>
                                 <li><Link href="/about">about</Link></li>
                                 <li>
-                                    <a>Service</a>
+                                    <Link href="/service">Service</Link>
                                     <ul>
                                         <li><Link href="/service">service</Link></li>
                                         <li><Link href="/service-dark">service dark</Link></li>
@@ -70,10 +70,10 @@ export default function Offcanvas() {
                                         <li><Link href="/service-details-dark">service details dark</Link></li>
                                     </ul>
                                 </li>
-                                <li><a>pages</a>
+                                <li><Link href="#">pages</Link>
                                     <ul>
                                         <li>
-                                            <a>Home</a>
+                                            <Link href="/">Home</Link>
                                             <ul>
                                                 <li><Link href="/">Digital Maketing</Link></li>
                                                 <li><Link href="/index-dark">Digital Maketing dark</Link></li>
@@ -92,7 +92,7 @@ export default function Offcanvas() {
                                             </ul>
                                         </li>
                                         <li>
-                                            <a>Service</a>
+                                            <Link href="/service">Service</Link>
                                             <ul>
                                                 <li><Link href="/service">service</Link></li>
                                                 <li><Link href="/service-dark">service dark</Link></li>
@@ -111,7 +111,7 @@ export default function Offcanvas() {
                                             </ul>
                                         </li>
                                         <li>
-                                            <a>portfolio</a>
+                                            <Link href="/portfolio">portfolio</Link>
                                             <ul>
                                                 <li><Link href="/portfolio">portfolio</Link></li>
                                                 <li><Link href="/portfolio-dark">portfolio dark</Link></li>
@@ -128,7 +128,7 @@ export default function Offcanvas() {
                                             </ul>
                                         </li>
                                         <li>
-                                            <a>team</a>
+                                            <Link href="/team">team</Link>
                                             <ul>
                                                 <li><Link href="/team">Team</Link></li>
                                                 <li><Link href="/team-dark">Team dark</Link></li>
@@ -141,7 +141,7 @@ export default function Offcanvas() {
                                             </ul>
                                         </li>
                                         <li>
-                                            <a>blog</a>
+                                            <Link href="/blog">blog</Link>
                                             <ul>
                                                 <li><Link href="/blog">blog</Link></li>
                                                 <li><Link href="/blog-dark">blog dark</Link></li>
@@ -154,7 +154,7 @@ export default function Offcanvas() {
                                             </ul>
                                         </li>
                                         <li>
-                                            <a>Others</a>
+                                            <Link href="#">Others</Link>
                                             <ul>
                                                 <li><Link href="/faq">FAQs</Link></li>
                                                 <li><Link href="/faq-dark">FAQs dark</Link></li>
@@ -166,7 +166,7 @@ export default function Offcanvas() {
                                         </li>
                                     </ul>
                                 </li>
-                                <li><a>blog</a>
+                                <li><Link href="/blog">blog</Link>
                                     <ul>
                                         <li><Link href="/blog">blog</Link></li>
                                         <li><Link href="/blog-dark">blog dark</Link></li>

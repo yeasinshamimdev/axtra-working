@@ -30,6 +30,7 @@ export default function Index1({ mode }) {
                 <meta name="description" content="Axtra HTML5 Template" />
                 <title>Home - Digital Marketing</title>
                 <link rel="icon" type="image/x-icon" href="assets/imgs/logo/favicon.png" />
+
             </Head>
             <main className={bgMode === "dark" ? "dark" : ""}>
 
