@@ -1,6 +1,17 @@
 import Link from "next/link";
+import { useState } from "react";
+import { searchContent } from "../constants/constants";
 
 export default function Offcanvas() {
+    const [query, setQuery] = useState("")
+    const [searchRes, setSearchRes] = useState([])
+
+    const handleSearch = (e) => {
+        e.preventDefault();
+        const result = searchContent.filter(sC => sC?.title?.toLowerCase().includes(query.toLowerCase()));
+        return setSearchRes(result)
+    }
+
     return (
         <div className="offcanvas__area">
             <div className="offcanvas__body">
@@ -185,10 +196,16 @@ export default function Offcanvas() {
                 </div>
                 <div className="offcanvas__right">
                     <div className="offcanvas__search">
-                        <form action="#">
-                            <input type="text" name="search" placeholder="Search keyword" />
+                        <form action="#" onChange={handleSearch}>
+                            <input type="text" name="search" placeholder="Search keyword" onChange={(e) => setQuery(e.target.value)} />
                             <button><i className="fa-solid fa-magnifying-glass"></i></button>
                         </form>
+                        {query &&
+                            <ul>
+                                {searchRes.map((sR, i) => (
+                                    <li className="searchOffCanvas" key={i}><Link href={sR.link}>{sR.title.slice(0, 35)}</Link></li>
+                                ))}
+                            </ul>}
                     </div>
                     <div className="offcanvas__contact">
                         <h3>Get in touch</h3>
