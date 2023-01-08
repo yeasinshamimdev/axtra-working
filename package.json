@@ -9,13 +9,16 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@next/font": "13.0.7",
-    "eslint": "8.30.0",
-    "eslint-config-next": "13.0.7",
+    "@next/font": "13.1.1",
+    "bootstrap": "^5.2.3",
+    "chroma-js": "^2.4.2",
+    "eslint": "8.31.0",
+    "eslint-config-next": "13.1.1",
+    "gsap": "npm:@gsap/business@^3.11.4",
     "next": "13.1.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-helmet": "^6.1.0",
-    "react-no-ssr": "^1.1.0"
+    "react-no-ssr": "^1.1.0",
+    "swiper": "^8.4.5"
   }
 }
