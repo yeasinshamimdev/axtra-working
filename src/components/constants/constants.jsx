@@ -499,3 +499,31 @@ export const teamContent = [
         subTitle: "Lead Designer",
     },
 ]
+
+
+export const searchContent = [
+    {
+        title: "Ways of lying to yourself about your new relationship",
+        link: "/blog"
+    }, 
+    {
+        title: "How to manage a talented and successful design team",
+        link: "/blog-2"
+    },
+    { 
+        title: "Arteck Lyon Conseil",
+        link: "/portfolio-2"
+    },
+    {
+        titleFirst: "Lionpro Agency", 
+        link: "/portfolio-3",
+    },
+    {
+        title1: "Branding Design",
+        link: "/service-3",   
+    },
+    { 
+        title: "BrSearch Engineanding Optimization",  
+        link: "/service-4",
+    },
+]
