@@ -1,7 +1,18 @@
 import Link from "next/link";
-import { Fragment } from "react";
+import { Fragment, useState } from "react";
+import { searchContent } from "../../constants/constants";
 
+ 
 export default function IndexHeader() {
+    const [query, setQuery] = useState("")
+    const [searchRes, setSearchRes] = useState([])
+      
+        const handleSearch = (e) => {
+            e.preventDefault();
+            const result = searchContent.filter(sC => sC?.title?.toLowerCase().includes(query.toLowerCase())); 
+            return setSearchRes(result)
+        }
+     
     return (
         <Fragment>
             <header className="header__area-3">
@@ -182,9 +193,15 @@ export default function IndexHeader() {
                 </div>
             </header>
             <div className="header__search">
-                <form action="#">
-                    <input type="text" name="s" id="s" placeholder="Search.." />
+                <form action="#" onChange={handleSearch}>
+                    <input type="text" name="s" id="s" placeholder="Search.." onChange={(e) => setQuery(e.target.value)} />
                 </form>
+                {query &&  
+                 <ul>
+                  {searchRes.map((sR, i)=> (
+                        <li className="searchLink" key={i}><Link href={sR.link}>{sR.title.slice(0, 35)}</Link></li>
+                    ))}
+                </ul>}
             </div>
         </Fragment>
     )
