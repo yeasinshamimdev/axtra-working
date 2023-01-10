@@ -45,7 +45,7 @@ const PortfolioForAll = ({ dark, number }) => {
                 {/* Go Top Button  */}
                 <GoTopButton />
                 {/* Porfolio Cursor   */}
-                <div class="cursor" id="portf_cursor_6">View <br />Project</div>
+                <div className="cursor" id="portf_cursor_6">View <br />Project</div>
 
                 {/* Header area start   */}
                 <PortfolioHead />

@@ -3,16 +3,16 @@ import React from 'react';
 
 const ServiceHead = () => {
   return (
-    <header class="header__area-7">
-      <div class="header__inner-2">
-        <div class="header__logo-2">
-          <Link href="/index " class="logo-dark"><img src="assets/imgs/logo/logo-black.png" alt="Site Logo" /></Link>
-          <Link href="/index " class="logo-light"><img src="assets/imgs/logo/site-logo-white-2.png" alt="Site Logo" /></Link>
+    <header className="header__area-7">
+      <div className="header__inner-2">
+        <div className="header__logo-2">
+          <Link href="/index " className="logo-dark"><img src="assets/imgs/logo/logo-black.png" alt="Site Logo" /></Link>
+          <Link href="/index " className="logo-light"><img src="assets/imgs/logo/site-logo-white-2.png" alt="Site Logo" /></Link>
         </div>
-        <div class="header__nav-2">
-          <ul class="main-menu-4 menu-anim">
+        <div className="header__nav-2">
+          <ul className="main-menu-4 menu-anim">
             <li><Link href="/">home</Link>
-              <ul class="mega-menu-2">
+              <ul className="mega-menu-2">
                 <li>
                   <ul>
                     <li><Link href="/index ">Digital Maketing</Link></li>
@@ -39,8 +39,8 @@ const ServiceHead = () => {
               </ul>
             </li>
             <li><Link href="/about ">About</Link></li>
-            <li class="has-megamenu"><Link href="/about ">Pages</Link>
-              <ul class="mega-menu">
+            <li className="has-megamenu"><Link href="/about ">Pages</Link>
+              <ul className="mega-menu">
                 <li>
                   <a>Home</a>
                   <ul>
@@ -136,9 +136,9 @@ const ServiceHead = () => {
               </ul>
             </li>
             <li><Link href="/portfolio ">services</Link>
-              <ul class="main-dropdown">
+              <ul className="main-dropdown">
                 <li><Link href="/service ">service</Link>
-                  <ul class="sub-dropdown">
+                  <ul className="sub-dropdown">
                     <li><Link href="/service-dark ">service dark</Link></li>
                     <li><Link href="/service-2-dark ">service V.2 dark</Link></li>
                     <li><Link href="/service-3-dark ">service V.3 dark</Link></li>
@@ -157,13 +157,13 @@ const ServiceHead = () => {
               </ul>
             </li>
             <li><Link href="/team ">team</Link>
-              <ul class="main-dropdown">
+              <ul className="main-dropdown">
                 <li><Link href="/team ">team</Link></li>
                 <li><Link href="/team-details ">team details</Link></li>
               </ul>
             </li>
             <li><Link href="/blog ">Blog</Link>
-              <ul class="main-dropdown">
+              <ul className="main-dropdown">
                 <li><Link href="/blog ">blog</Link></li>
                 <li><Link href="/blog-2 ">blog v.2</Link></li>
                 <li><Link href="/category ">category</Link></li>
@@ -173,8 +173,8 @@ const ServiceHead = () => {
             <li><Link href="/contact ">Contact</Link></li>
           </ul>
         </div>
-        <div class="header__nav-icon-7">
-          <button class="menu-icon-2" id="open_offcanvas"><img src="assets/imgs/icon/menu-dark.png"
+        <div className="header__nav-icon-7">
+          <button className="menu-icon-2" id="open_offcanvas"><img src="assets/imgs/icon/menu-dark.png"
             alt="Menubar Icon" /></button>
         </div>
       </div>
