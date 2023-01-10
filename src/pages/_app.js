@@ -10,9 +10,6 @@ import NoSSR from 'react-no-ssr';
 import Placeholder from '../components/common/placeholder.jsx';
 
 function MyApp({ Component, pageProps }) {
-  const isSSREnabled = () => typeof window === 'undefined';
-
-  console.log(isSSREnabled && "render");
 
   return <NoSSR onSSR={<Placeholder />}>
     <Component {...pageProps} />
