@@ -11,7 +11,7 @@ const UseScript = ({ src }) => {
       if (src[11] === "assets/js/main.js") {
         setTimeout(() => {
           document.body.appendChild(script)
-        }, 1000)
+        }, 2000)
       } else {
         document.body.appendChild(script)
       }
