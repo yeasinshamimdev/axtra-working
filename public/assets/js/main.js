@@ -2119,7 +2119,7 @@
 
 
   // Home page Hero Animation 
- 
+
   /////////////////////////////////////////////////////
   //  Service Page Animation 
   let animation__service_page = gsap.utils.toArray(".animation__service_page")
@@ -2478,41 +2478,41 @@
   }
   /////////////////////////////////////////////////////
 
- // Home One Hero Animation 
+  // Home One Hero Animation 
   let HomeDigital = gsap.timeline()
   let HomeDigitalImage = gsap.timeline()
 
   let hero7_thum_anim = document.querySelector(".hero7__thum-anim")
-  if(hero7_thum_anim){
+  if (hero7_thum_anim) {
     let hero7_thumb_1 = document.querySelector(".image-1")
     let hero7_thumb_2 = document.querySelector(".image-2")
     let hero7_thumb_3 = document.querySelector(".image-3")
     let hero7_thumb_4 = document.querySelector(".image-4")
 
-    gsap.from(".image-1",{ 
-      x:65,
-      yPercent:100,
+    gsap.from(".image-1", {
+      x: 65,
+      yPercent: 100,
       opacity: 0,
       duration: 2,
       delay: 1
     })
 
-    gsap.from(".image-2",{   
+    gsap.from(".image-2", {
       delay: 1.5,
       scale: 0,
       duration: 1.5
     })
 
-    gsap.from(".image-3",{ 
-      x:65,
-      yPercent:-100,
+    gsap.from(".image-3", {
+      x: 65,
+      yPercent: -100,
       duration: 2,
       opacity: 0,
       delay: 1
     })
-    gsap.from(".image-4",{ 
-      xPercent:-100,
-      yPercent:-100,
+    gsap.from(".image-4", {
+      xPercent: -100,
+      yPercent: -100,
       duration: 2,
       opacity: 0,
       delay: 1
@@ -2564,13 +2564,13 @@
 
   // Charchater Come long Animation 
   let hero__title = document.querySelector(".hero__title")
-  let hero__subtitle = document.querySelector(".hero__sub-title") 
+  let hero__subtitle = document.querySelector(".hero__sub-title")
 
 
   let split_hero__title = new SplitText(hero__title, { type: "chars" })
   let split_hero__subtitle = new SplitText(hero__subtitle, { type: "chars words" })
-   
-  homeAgency.from(split_hero__title.chars, { duration: 1, x: 70, autoAlpha: 0, stagger: 0.1 }); 
+
+  homeAgency.from(split_hero__title.chars, { duration: 1, x: 70, autoAlpha: 0, stagger: 0.1 });
   homeAgency.from(split_hero__subtitle.words, { duration: 1, x: 50, autoAlpha: 0, stagger: 0.05 }, "-=1");
 
   homeAgency.to(".experience", {
@@ -2578,7 +2578,7 @@
     opacity: 1,
     duration: 2,
     ease: "power2.out"
-  }, '-=1.5') 
+  }, '-=1.5')
 
 
 
@@ -2592,19 +2592,19 @@
   let hero6_button = document.querySelector(".hero__six_anim a")
   let hero6_image = document.querySelector(".hero__right-6 img")
 
-  gsap.set([hero6_button,hero6_image], {
-    opacity:0,
-    y:50
+  gsap.set([hero6_button, hero6_image], {
+    opacity: 0,
+    y: 50
   })
 
 
-  let split_hero6_title = new SplitText(hero6_title, { type: "chars" }) 
-  let split_hero6_desc = new SplitText(hero6_desc, { type: "chars words"})
+  let split_hero6_title = new SplitText(hero6_title, { type: "chars" })
+  let split_hero6_desc = new SplitText(hero6_desc, { type: "chars words" })
 
-  homeStratup.from(split_hero6_title.chars, { duration: 1, x: 70, autoAlpha: 0, stagger: 0.1 }); 
+  homeStratup.from(split_hero6_title.chars, { duration: 1, x: 70, autoAlpha: 0, stagger: 0.1 });
   homeStratup.from(split_hero6_desc.words, { duration: 1, x: 50, autoAlpha: 0, stagger: 0.05 }, "-=1");
-  homeStratup.to(hero6_button, {opacity: 1, y:0, duration: 1, ease: "power2.out"}, "-=1.5")
-  homeStratup.to(hero6_image, {opacity: 1, y:0, duration: 1, ease: "power2.out"}, "-=1")
+  homeStratup.to(hero6_button, { opacity: 1, y: 0, duration: 1, ease: "power2.out" }, "-=1.5")
+  homeStratup.to(hero6_image, { opacity: 1, y: 0, duration: 1, ease: "power2.out" }, "-=1")
 
 
 

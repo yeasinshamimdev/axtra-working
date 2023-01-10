@@ -8,10 +8,10 @@ const UseScript = ({ src }) => {
       script.src = scriptSrc
       script.async = true
 
-      if (src[11] === "assets/js/main.js") {
+      if (src[13] === "assets/js/main.js") {
         setTimeout(() => {
           document.body.appendChild(script)
-        }, 2000)
+        }, 1000)
       } else {
         document.body.appendChild(script)
       }
