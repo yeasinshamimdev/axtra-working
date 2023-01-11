@@ -15,6 +15,7 @@ import BrandAbout from "../../components/about/brandAbout";
 import TestimonialAbout from "../../components/about/testimonialAbout";
 import CtaArea from "../../components/common/ctaArea";
 import Footer from "../../components/common/footer";
+import Script from "next/script";
 
 export default function BaseAbout({ mode }) {
     const [bgMode, setBgMode] = useState(mode);

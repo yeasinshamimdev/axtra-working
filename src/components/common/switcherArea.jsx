@@ -14,7 +14,7 @@ export default function SwitcherArea({ setBgMode, bgMode }) {
                     <div className="switcher__btn">
                         <select name="cursor-style" id="cursor_style">
                             <option value="1">default</option>
-                            <option selected value="2">animated</option>
+                            <option value="2">animated</option>
                         </select>
                     </div>
                 </div>
