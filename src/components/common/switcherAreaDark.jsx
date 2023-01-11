@@ -15,7 +15,7 @@ export default function SwitcherAreaDark({ handleDark, dark }) {
                         <div className="switcher__btn">
                             <select name="cursor-style" id="cursor_style">
                                 <option value="1">default</option>
-                                <option selected value="2">animated</option>
+                                <option value="2">animated</option>
                             </select>
                         </div>
                     </div>
@@ -25,8 +25,8 @@ export default function SwitcherAreaDark({ handleDark, dark }) {
                             <h2 className="switcher__title">mode</h2>
                         </div>
                         <div className="switcher__btn mode-type wc-col-2">
-                            <button onClick={() => handleDark(false)} className={dark ? "" :"active"} data-mode="light">light</button>
-                            <button onClick={() => handleDark(true)} className={dark ? "active" :""} data-mode="dark">dark</button>
+                            <button onClick={() => handleDark(false)} className={dark ? "" : "active"} data-mode="light">light</button>
+                            <button onClick={() => handleDark(true)} className={dark ? "active" : ""} data-mode="dark">dark</button>
                         </div>
                     </div>
                 </div>

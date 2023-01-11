@@ -16,7 +16,8 @@ import ScrollSmoother from "../../../components/common/scrollSmoother";
 import IndexHeader from "../../../components/home/head/indexHeader";
 import Placeholder from "../../../components/common/placeholder";
 import CursorAnimation from "../../../components/common/cursorAnimation";
-import { Fragment, useState } from "react";
+import { Fragment, useEffect, useState } from "react";
+import Script from "next/script";
 
 export default function Index1({ mode }) {
     const [bgMode, setBgMode] = useState(mode);
@@ -24,7 +25,6 @@ export default function Index1({ mode }) {
     return (
         <Fragment>
             <Head>
-                <meta charset="utf-8" />
                 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                 <meta name="description" content="Axtra HTML5 Template" />

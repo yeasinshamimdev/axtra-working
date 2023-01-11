@@ -1881,39 +1881,39 @@
 
   /////////////////////////////////////////////////////
   // 54. Hero 1 Animation
-  // if (document.querySelector(".animation__hero_one")) {
-  //   let heroOnetl = gsap.timeline()
-  //   gsap.set(".animation__hero_one .experience", {
-  //     y: 50,
-  //     opacity: 0,
-  //   })
+  if (document.querySelector(".animation__hero_one")) {
+    let heroOnetl = gsap.timeline()
+    gsap.set(".animation__hero_one .experience", {
+      y: 50,
+      opacity: 0,
+    })
 
-  //   // animation__hero_one a
-  //   let split_char_btn = new SplitText(".animation__hero_one a", { type: "chars, words" })
-  //   heroOnetl.from(split_char_btn.words, { duration: 1, x: -50, opacity: 0, autoAlpha: 0, stagger: 0.1 });
+    // animation__hero_one a
+    let split_char_btn = new SplitText(".animation__hero_one a", { type: "chars, words" })
+    heroOnetl.from(split_char_btn.words, { duration: 1, x: -50, opacity: 0, autoAlpha: 0, stagger: 0.1 });
 
-  //   //hero__title
-  //   let split_char_hero = new SplitText(".hero__title", { type: "chars, words" })
-  //   heroOnetl.from(split_char_hero.chars, { duration: 1, x: 70, opacity: 0, autoAlpha: 0, stagger: 0.1 }, '-=1');
+    //hero__title
+    let split_char_hero = new SplitText(".hero__title", { type: "chars, words" })
+    heroOnetl.from(split_char_hero.chars, { duration: 1, x: 70, opacity: 0, autoAlpha: 0, stagger: 0.1 }, '-=1');
 
-  //   //hero__Sub_title
-  //   let split_char_hero_subtitle = new SplitText(".animation__hero_one .hero__sub-title", { type: "words" })
-  //   heroOnetl.from(split_char_hero_subtitle.words, { duration: 1, x: 50, opacity: 0, autoAlpha: 0, stagger: 0.07 }, '-=1.5');
+    //hero__Sub_title
+    let split_char_hero_subtitle = new SplitText(".animation__hero_one .hero__sub-title", { type: "words" })
+    heroOnetl.from(split_char_hero_subtitle.words, { duration: 1, x: 50, opacity: 0, autoAlpha: 0, stagger: 0.07 }, '-=1.5');
 
-  //   // heroOnetl.to(".animation__hero_one .hero__sub-title", {
-  //   //   y: 0,
-  //   //   opacity: 1,
-  //   //   duration: 2,
-  //   //   ease: "power2.out"
-  //   // }, '-=1.5')
+    heroOnetl.to(".animation__hero_one .hero__sub-title", {
+      y: 0,
+      opacity: 1,
+      duration: 2,
+      ease: "power2.out"
+    }, '-=1.5')
 
-  //   heroOnetl.to(".animation__hero_one .experience", {
-  //     y: 0,
-  //     opacity: 1,
-  //     duration: 2,
-  //     ease: "power2.out"
-  //   }, '-=1.5')
-  // }
+    heroOnetl.to(".animation__hero_one .experience", {
+      y: 0,
+      opacity: 1,
+      duration: 2,
+      ease: "power2.out"
+    }, '-=1.5')
+  }
 
 
 
